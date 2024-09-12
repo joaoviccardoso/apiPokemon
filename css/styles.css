@@ -1,15 +1,35 @@
-.cabecalho{
+:root{
+    --cor-azul-escuro:#92C7CF;
+    --cor-azul-claro:#AAD7D9;
+    --cor-cinza-escuro:#E5E1DA;
+    --cor-cinza-claro:#FBF9F1;
+}
+
+/*Cabecalho*/
+.container__cabecalho{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0.4rem;
+}
+
+/*main-centro*/
+
+.main-centro{
     border: 1px solid #000;
 }
 
-.main-esquerdo{
+/*aside-direito*/
+
+.aside-direito{
     border: 1px solid #000;
 }
 
-.main-direito{
+/*Aside esquerda*/
+
+.aside-esquerda{
     border: 1px solid #000;
 }
 
-.footer{
-    border: 1px solid #000;
-}
+/*footer*/

@@ -1,25 +1,32 @@
 body{
     display: grid;
     width: 100vh;
-    grid-template: 100px 80vh 100px / 14vw 55vw 30vw;
+    grid-template: 100px 80vh 80px / 14vw 55vw 30vw;
     grid-template-areas: 
       "header header header"
-      "esquerda esquerda direita"
+      "esquerda centro direita"
       "footer footer footer";
+    background-color: var(--cor-cinza-escuro);
 }
 
 .cabecalho{
     grid-area: header;
+    background-color: var(--cor-azul-escuro);
 }
 
-.main-esquerdo{
-    grid-area:esquerda;
+.main-centro{
+    grid-area: centro;
 }
 
-.main-direito{
-    grid-area:direita;
+.aside-direito{
+    grid-area: direita;
+}
+
+.aside-esquerda{
+    grid-area: esquerda;
 }
 
 .footer{
     grid-area: footer;
+    background-color: var(--cor-azul-escuro);
 }
