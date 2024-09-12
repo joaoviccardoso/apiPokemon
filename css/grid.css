@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    width: 100vh;
+    grid-template: 100px 80vh 100px / 14vw 55vw 30vw;
+    grid-template-areas: 
+      "header header header"
+      "esquerda esquerda direita"
+      "footer footer footer";
+}
+
+.cabecalho{
+    grid-area: header;
+}
+
+.main-esquerdo{
+    grid-area:esquerda;
+}
+
+.main-direito{
+    grid-area:direita;
+}
+
+.footer{
+    grid-area: footer;
+}
