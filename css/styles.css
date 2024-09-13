@@ -53,14 +53,15 @@
 .lista__pokedex{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 /*aside-direito*/
 
-.aside-direito{
-    border: 1px solid #000;
+/*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
+.card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 /*Aside esquerda*/
