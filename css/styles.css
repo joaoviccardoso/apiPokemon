@@ -3,6 +3,7 @@
     --cor-azul-claro:#AAD7D9;
     --cor-cinza-escuro:#E5E1DA;
     --cor-cinza-claro:#FBF9F1;
+    --gradiente: linear-gradient(53deg, #e6e6e6 20%, #f2f2f2 40%, #ffffff 90%);
     --font-roboto: "Roboto";
 }
 

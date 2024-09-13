@@ -1,12 +1,13 @@
 body{
     display: grid;
-    width: 100vh;
+    width: 100vw;
+    height: 100vh;
     grid-template: 100px auto 80px / 14vw 58vw 28vw;
     grid-template-areas: 
       "header header header"
       "esquerda centro direita"
       "footer footer footer";
-    background-color: var(--cor-cinza-claro);
+    background: var(--gradiente);
     font-family: var(--font-roboto);
     font-weight: 500;
 }
