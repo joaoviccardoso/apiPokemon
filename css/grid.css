@@ -1,7 +1,7 @@
 body{
     display: grid;
     width: 100vh;
-    grid-template: 100px 80vh 80px / 14vw 55vw 30vw;
+    grid-template: 100px auto 80px / 14vw 55vw 30vw;
     grid-template-areas: 
       "header header header"
       "esquerda centro direita"
