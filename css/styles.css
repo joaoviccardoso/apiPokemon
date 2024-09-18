@@ -68,7 +68,11 @@
 /*Aside esquerda*/
 
 .aside-esquerda{
-    border: 1px solid #000;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background: #fff;
+    margin-left: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 .container__select{
@@ -125,4 +129,16 @@
 .titulo__rede{
     font-size: 1rem;
     font-weight: 500;
+    color: #212529;
+}
+
+.btn-filtrar{
+    background-color: var(--cor-azul-claro);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+    font-family: var(--font-roboto);
+}
+
+.btn-filtrar:hover{
+    background-color: var(--cor-azul-escuro);
 }
