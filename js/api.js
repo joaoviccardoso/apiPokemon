@@ -1,5 +1,6 @@
-async function getApi() {
-    const busca = await fetch('https://pokeapi.co/api/v2/');
-    const pokemons = await busca.json()
-    console.log(pokemons)
+async function getApi(){
+    const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`);
+    const listaPokemons = await respostaApi.json()
+    console.log(listaPokemons)
 }
+
