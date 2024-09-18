@@ -71,6 +71,20 @@
     border: 1px solid #000;
 }
 
+.container__select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-select{
+    width: 80%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
 /*footer*/
 
 .minhas__redes{
@@ -79,8 +93,8 @@
     align-items: center;
     gap: 16px;
 
-    width: 25%;
-    height: 80px;
+    width: 90%;
+    height: 70px;
     padding: .3rem;
     margin: .5rem 0;
   
@@ -99,6 +113,6 @@
 }
 
 .titulo__rede{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
 }
