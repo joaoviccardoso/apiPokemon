@@ -85,7 +85,15 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-/*footer*/
+.home{
+    text-decoration: none;
+}
+
+.modoClaroEmodoVoltar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .minhas__redes{
     display: flex;
@@ -93,10 +101,11 @@
     align-items: center;
     gap: 16px;
 
-    width: 90%;
+    width: 15%;
     height: 70px;
     padding: .3rem;
-    margin: .5rem 0;
+    position: absolute;
+    bottom: 10%;
   
     background-color: var(--cor-azul-escuro);
     border-radius: 64px;
@@ -110,6 +119,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .titulo__rede{
