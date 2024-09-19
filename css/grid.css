@@ -2,7 +2,7 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template: 100px auto 80px / 17vw 58vw 28vw;
+    grid-template: 100px auto 80px / 18vw 58vw 28vw;
     grid-template-areas: 
       "header header header"
       "esquerda centro direita"
@@ -32,7 +32,7 @@ body{
     justify-content: center;
 }
 
-.aside-esquerda{
+.aside__container__esquerdo{
     grid-area: esquerda;
 }
 

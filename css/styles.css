@@ -65,23 +65,32 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-/*Aside esquerda*/
-
-.aside-esquerda{
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    background: #fff;
-    margin-left: 1rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+.cardStatus{
+    position: fixed;
+    top: 15%;
+    right: 2rem;
 }
+
+/*Aside esquerda*/
 
 .container__select{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+
+    gap: 1.2rem;
+    height: 550px;
+    width: 20rem;
+
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+   
+    position: fixed;
+    top: 15%;
+    left: 1.5rem;
 }
 
 .form-select{
@@ -105,11 +114,11 @@
     align-items: center;
     gap: 16px;
 
-    width: 15%;
+    width: 83%;
     height: 70px;
     padding: .3rem;
     position: absolute;
-    bottom: 10%;
+    bottom: 1%;
   
     background-color: var(--cor-azul-escuro);
     border-radius: 64px;
