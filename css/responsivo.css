@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1024px) and (max-width: 1399px){
+    .cardStatus{
+        width: 300px;
+    }
+
+    .container__select{
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1023px){
+    .cardStatus{
+        width: 200px;
+    }
+
+    .container__select{
+        width: 200px;
+    }
+
+    .titulo__rede{
+        display: none;
+    }
+}

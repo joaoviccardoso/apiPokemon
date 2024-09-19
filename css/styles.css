@@ -32,14 +32,13 @@
 /*main-centro*/
 .container__input{
    display: flex;
-   justify-content:end;
+   justify-content: center;
    margin-top: 3rem;
 }
 
 .input__pesquisa{
-    width: 65%;
+    width: 73%;
     height: 50px;
-    margin-right: 2rem;
     
     background-image: url("../img/pokeball.png");
     background-repeat: no-repeat;
@@ -53,6 +52,8 @@
 
 .lista__pokedex{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
@@ -66,6 +67,9 @@
 }
 
 .cardStatus{
+    width: 20rem;
+    height: 35rem;
+
     position: fixed;
     top: 15%;
     right: 2rem;
@@ -90,7 +94,7 @@
    
     position: fixed;
     top: 15%;
-    left: 1.5rem;
+    left: 1.2rem;
 }
 
 .form-select{
