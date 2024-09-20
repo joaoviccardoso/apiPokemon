@@ -64,6 +64,7 @@
 /*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
 .card{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    width: 12rem;
 }
 
 .cardStatus{
@@ -72,7 +73,7 @@
 
     position: fixed;
     top: 15%;
-    right: 2rem;
+    right: 5rem;
 }
 
 /*Aside esquerda*/
@@ -94,7 +95,11 @@
    
     position: fixed;
     top: 15%;
-    left: 1.2rem;
+    left: 5rem;
+}
+
+.imgPokebola{
+    width: 50px;
 }
 
 .form-select{

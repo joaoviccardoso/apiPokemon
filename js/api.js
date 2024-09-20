@@ -16,8 +16,8 @@ async function getApi(id){
 
 function criarCardPokemon(pokemon){
     containerPokemons.innerHTML += `
-        <li class="lista_pokemon">
-            <div class="card" style="width: 12rem;">
+        <li class="lista__pokemon">
+            <div class="card">
                 <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="${pokemon.name}">
                 <div class="card-body">
                     <h5 class="card-title">${pokemon.name}</h5>

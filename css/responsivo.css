@@ -1,10 +1,12 @@
 @media only screen and (min-width: 1024px) and (max-width: 1399px){
     .cardStatus{
         width: 300px;
+        right: 1.9rem;
     }
 
     .container__select{
         width: 280px;
+        left: 1.9rem;
     }
 
 }
@@ -12,13 +14,16 @@
 @media only screen and (min-width: 880px) and (max-width: 1023px){
     .cardStatus{
         width: 200px;
+        right: 2rem;
     }
 
     .container__select{
         width: 200px;
+        left: 1rem;
     }
 
     .titulo__rede{
         display: none;
     }
 }
+

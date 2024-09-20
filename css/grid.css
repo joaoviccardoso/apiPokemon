@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template: 100px auto 80px / 23vw 50vw 27vw;
+    grid-template: 100px auto / 23vw 50vw 27vw;
     grid-template-areas: 
       "header header header"
       "esquerda centro direita"
@@ -34,10 +34,46 @@ body{
     grid-area: esquerda;
 }
 
-.footer{
-    grid-area: footer;
+/*o grid no media query so funciona no quanto esta na pasta do grid principa, sei o motivo nao kkkk*/
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 280px) and (max-width: 879px){
+    body{
+        display: grid;
+        grid-template: auto 450px auto/ auto;
+        grid-template-areas: 
+          "header"
+          "centro";
+    }
+
+    .container__cabecalho{
+        width: 65%;
+    }
+
+    .lista__pokedex{
+        padding: 0;
+    }
+
+    .card{
+        width: 9rem;
+    }
+
+    .container__select{
+       display: none;
+    }
+
+    .titulo__rede{
+        display: none;
+    }
+    
+    .cardStatus{
+        display: none;
+    } 
+
+    .cabecalho{
+        grid-area: header;
+    }
+
+    .main-centro{
+        grid-area: centro;
+    }
 }
