@@ -1,5 +1,5 @@
 const containerPokemons = document.querySelector('.lista__pokedex');
-let contadorDePokemons = 150;
+let contadorDePokemons = 151;
 
 async function pokemons() {
     for (let i = 1; i <= contadorDePokemons; i++) {
@@ -11,14 +11,14 @@ async function getApi(id){
     const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const listaPokemons = await respostaApi.json()
     criarCardPokemon(listaPokemons)
-    console.log(listaPokemons.name)
+    console.log(listaPokemons)
 }
 
 function criarCardPokemon(pokemon){
     containerPokemons.innerHTML += `
         <li class="lista_pokemon">
             <div class="card" style="width: 12rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="${pokemon.name}">
                 <div class="card-body">
                     <h5 class="card-title">${pokemon.name}</h5>
                     <p class="card-text">${pokemon.id.toString()}</p>
