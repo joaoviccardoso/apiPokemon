@@ -50,6 +50,17 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn-buscar{
+    background-color: var(--cor-azul-claro);
+    border: 1px solid var(--cor-azul-claro);
+    border-radius: 32px;
+    margin-left: 0.8rem
+}
+
+.btn-buscar:hover{
+   background-color: var(--cor-azul-escuro);
+}
+
 .lista__pokedex{
     display: flex;
     align-items: center;
@@ -64,7 +75,26 @@
 /*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
 .card{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    width: 12rem;
+    width: 13rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card-pokemon{
+    border-radius: 50%;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
 }
 
 .cardStatus{
