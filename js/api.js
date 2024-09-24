@@ -8,7 +8,7 @@ async function pokemons() {
     for (let i = 1; i <= contadorDePokemons; i++) {
         await getApi(i)
     }
-    pegarBtnsDosPokemon()
+    pegarBtnsSaberMais()
 }
 
 async function getApi(id){
@@ -32,20 +32,6 @@ function criarCardPokemon(pokemon){
             </div>
         </li>
     `
-}
-
-
-
-function pegarBtnsDosPokemon(){
-    const btnsPokemons = document.querySelectorAll(".btn-success");
-    console.log(btnsPokemons)
-    btnsPokemons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            const idDoBtn = this.id
-            const numeroDoIdDoBtn = idDoBtn.split("-")[1];
-            saberMaisSobrePokemon(numeroDoIdDoBtn);
-        })
-    })
 }
 
 pokemons()

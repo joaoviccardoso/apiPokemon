@@ -5,7 +5,9 @@ body{
       "header header header"
       "esquerda centro direita"
       "footer footer footer";
-    background: var(--gradiente);
+    background-color: var(--gradiente);
+    background-repeat: no-repeat;
+    background-size: 100vh;
     font-family: var(--font-roboto);
     font-weight: 500;
 }
