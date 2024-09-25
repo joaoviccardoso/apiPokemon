@@ -84,9 +84,17 @@
     align-items: center;
     justify-content: center;
 }
+.btn-saberMais{
+   background-color: var(--cor-azul-claro);
+   border-radius: 16px;
+}
 
-.img-card-pokemon{
-    border-radius: 50%;
+.btn-saberMais:hover{
+    background-color: var(--cor-azul-escuro);
+}
+
+.img-saberMais{
+    width: 60%;
 }
 
 .card-title{
@@ -104,6 +112,9 @@
     position: fixed;
     top: 15%;
     right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Aside esquerda*/
