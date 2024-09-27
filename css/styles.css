@@ -3,7 +3,15 @@
     --cor-azul-claro:#AAD7D9;
     --cor-cinza-escuro:#E5E1DA;
     --cor-cinza-claro:#FBF9F1;
-    --gradiente: linear-gradient(53deg, #e6e6e6 20%, #f2f2f2 40%, #ffffff 90%);
+    --backgroud: #fcf8ff;
+    --card: #fff;
+    --title: #000;
+    --border: #ccc;
+
+    --title-black: #fff;
+    --background-dark: rgb(21, 32, 43);
+    --dark-items: rgba(29, 161, 242, 0.1);
+    --card-dark: rgb(37, 51, 65);
     --font-roboto: "Roboto";
 }
 
@@ -75,6 +83,8 @@
 /*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
 .card{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    background-color: var(--card);
+    color: var(--title);
     width: 13rem;
 }
 
@@ -129,10 +139,11 @@
     height: 550px;
     width: 20rem;
 
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 16px;
-    background: #fff;
+    background: var(--card);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    color:var(--title);
    
     position: fixed;
     top: 15%;
@@ -201,3 +212,4 @@
 .btn-filtrar:hover{
     background-color: var(--cor-azul-escuro);
 }
+
