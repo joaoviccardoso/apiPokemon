@@ -27,7 +27,7 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
               <li class="list-group-item">Altura: ${listaDosPokemons[numeroDoIdDoBtn].height / 10}m</li>
             </ul>
             <div class="card-body">
-              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btn-saberMais ">Som do Pokemon</button>
+              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btn-saberMais d-none d-sm-block">Som do Pokemon</button>
             </div>
           </div>
     `

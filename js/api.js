@@ -27,7 +27,7 @@ function criarCardPokemon(pokemon){
                     <p class="card-text">#${pokemon.id.toString()}</p>
                     <h5 class="card-title">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
                     <p class="card-text">${pokemon.types.map(type => type.type.name)}</p>
-                    <button type="button" id="botao-${pokemon.id}" class="btn btn-success">Saber mais</button>
+                    <button type="button" id="botao-${pokemon.id}" class="btn btn-success d-none d-sm-block">Saber mais</button>
                 </div>
             </div>
         </li>

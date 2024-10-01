@@ -36,7 +36,7 @@ function criarPokemonsFiltrados(resuldados){
                     <p class="card-text">#${resuldado.id.toString()}</p>
                     <h5 class="card-title">${resuldado.name[0].toUpperCase() + resuldado.name.substring(1)}</h5>
                     <p class="card-text">${resuldado.types.map(type => type.type.name)}</p>
-                    <button type="button" id="botao-${resuldado.id}" class="btn btn-success">Saber mais</button>
+                    <button type="button" id="botao-${resuldado.id}" class="btn btn-success d-none d-sm-block">Saber mais</button>
                 </div>
             </div>
         </li>
