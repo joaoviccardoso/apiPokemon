@@ -9,12 +9,15 @@ btnPesquisar.addEventListener("click", () =>{
         alert("Digite um nome de um pokemon ou seu numero")
         return
     }
+
+    const inputPesquisarMinusculo = removerAcentos(inputPesquisar.toLowerCase());
+    console.log(inputPesquisarMinusculo)
     
     const resuldados = listaDosPokemons.filter(pokemon =>{
         const nomeDoPokemonMinusculo = removerAcentos(pokemon.name.toLowerCase());
         const idDoPokemon = pokemon.id.toString();
 
-        return nomeDoPokemonMinusculo.includes(inputPesquisar) || idDoPokemon.includes(inputPesquisar)
+        return nomeDoPokemonMinusculo.includes(inputPesquisarMinusculo) || idDoPokemon.includes(inputPesquisarMinusculo)
     })
 
     if(resuldados.length === 0){
