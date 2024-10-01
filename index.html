@@ -24,12 +24,10 @@
     <aside class="aside__container__esquerdo">
         <nav class="container__select aside-esquerda">
             <img class="imgPokebola" src="./img/pokeball.png" alt="logo pokebola" width="90">
-            <select class="form-select selectRegiao" aria-label="Default select example">
-                <option selected>Escolha a Região</option>
-                <option value="">One</option>
-                <option value="">Two</option>
-                <option value="">Three</option>
-            </select>
+            <div class="container__input">
+                <input class="input__pesquisa" id="campoPesquisa" type="text" placeholder="Pesquisar">
+                <button type="button" class="btn btn-buscar" id="btnBuscar">Buscar</button>
+            </div>
 
             <select class="form-select selectRegiao" aria-label="Default select example">
                 <option selected>Tipo do pokemon</option>
@@ -70,11 +68,6 @@
     </aside>
 
     <main class="main-centro">
-        <div class="container__input">
-            <input class="input__pesquisa" id="campoPesquisa" type="text" placeholder="Procure o pokemon pelo numero ou nome">
-            <button type="button" class="btn btn-buscar" id="btnBuscar">Buscar</button>
-        </div>
-        
         <ul class="lista__pokedex">
             
         </ul>

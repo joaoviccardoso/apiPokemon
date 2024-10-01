@@ -40,11 +40,8 @@ body{
 
 @media only screen and (min-width: 280px) and (max-width: 879px){
     body{
-        display: grid;
-        grid-template: auto 450px auto/ auto;
-        grid-template-areas: 
-          "header"
-          "centro";
+        display: flex;
+        flex-direction: column;
     }
 
     .container__cabecalho{
@@ -59,8 +56,22 @@ body{
         width: 9rem;
     }
 
+    .aside__container__esquerdo{
+        display: flex;
+        justify-content: center;
+
+        margin: 1rem;
+    }
+
     .container__select{
-       display: none;
+       align-items: center;
+       position: static;
+
+       height: 500px;
+    }
+
+    .minhas__redes{
+        position: static;
     }
 
     .titulo__rede{
