@@ -11,7 +11,6 @@ btnPesquisar.addEventListener("click", () =>{
     }
 
     const inputPesquisarMinusculo = removerAcentos(inputPesquisar.toLowerCase());
-    console.log(inputPesquisarMinusculo)
     
     const resuldados = listaDosPokemons.filter(pokemon =>{
         const nomeDoPokemonMinusculo = removerAcentos(pokemon.name.toLowerCase());
