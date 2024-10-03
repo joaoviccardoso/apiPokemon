@@ -2,7 +2,11 @@ const btnFiltrar = document.getElementById("btnFiltrar");
 
 btnFiltrar.addEventListener('click', function(){
     const resuldadoSelect = document.querySelector(".selectTipos").value; 
-    console.log(resuldadoSelect) 
+    
+    if(resuldadoSelect == "Tipo do pokemon"){
+        alert("Coloque um tipo do pokemon para pesquisar")
+        return
+    }
     
     const pokemonResuldado = listaDosPokemons.filter(pokemon =>{
         const typesPokemon = pokemon.types.map(type => type.type.name)

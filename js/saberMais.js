@@ -2,7 +2,6 @@ const containerSaberMais = document.querySelector(".aside-direito");
 
 function pegarBtnsSaberMais(){
     const btnsPokemons = document.querySelectorAll(".btn-success");
-    console.log(btnsPokemons)
     btnsPokemons.forEach(function(btn) {
         btn.addEventListener('click', function() {
             const idDoBtn = this.id
@@ -11,6 +10,19 @@ function pegarBtnsSaberMais(){
             saberMaisSobrePokemon(numeroDoIdDoBtn);
         })
     })
+}
+
+function pegarSomParaCelular(){
+  const btnsSomPokemonCelular = document.querySelectorAll(".btnSomCelular");
+  console.log(btnsSomPokemonCelular)
+  btnsSomPokemonCelular.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const idDoBtnSom = this.id;
+      const idDoBtnSomString = idDoBtnSom.split("-")[1];
+      const numeroDoIdDoBtnSom = Number(idDoBtnSomString) - 1;
+      somDoPokemon(numeroDoIdDoBtnSom)
+    })
+  })
 }
 
 function saberMaisSobrePokemon(numeroDoIdDoBtn){
