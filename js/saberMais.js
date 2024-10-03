@@ -40,10 +40,12 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
             </ul>
             <div class="card-body">
               <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btn-saberMais d-none d-sm-block">Som do Pokemon</button>
+              <button type="button" id="botaoSomCelular-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btnSomCelular d-sm-none">Som</button>
             </div>
           </div>
     `
-    btnSaberMaisPokemon()      
+    btnSaberMaisPokemon() 
+    pegarSomParaCelular()     
 }
 
 function btnSaberMaisPokemon(){

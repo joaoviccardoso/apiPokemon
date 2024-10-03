@@ -71,6 +71,10 @@
     border-radius: 8px;
 }
 
+.btnSomCelular:active{
+    background: var(--cor-azul-escuro);
+}
+
 .lista__pokedex{
     display: flex;
     align-items: center;
