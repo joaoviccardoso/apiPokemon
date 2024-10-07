@@ -16,21 +16,21 @@
 <body class="body">
     <header class="cabecalho">
         <div class="container__cabecalho">
-            <img class="img_cabecalho" src="./img/pokeball.png" alt="imagem de uma pokeboll" width="50">
+            <a href="./index.html"><img class="img_cabecalho" src="./img/pokeball.png" alt="imagem de uma pokeboll" width="50"></a>
             <h1 class="titulo_cabecalho">Pokédex</h1>
         </div>
     </header>
 
     <aside class="aside__container__esquerdo">
         <nav class="container__select aside-esquerda">
-            <img class="imgPokebola" src="./img/pokeball.png" alt="logo pokebola" width="90">
+            <img class="imgPokebola" id="24" src="./img/pikachu.png" alt="logo pokebola">
             <div class="container__input">
-                <input class="input__pesquisa" id="campoPesquisa" type="text" placeholder="Pesquisar">
-                <button type="button" class="btn btn-buscar" id="btnBuscar">Buscar</button>
+                <input class="input__pesquisa" id="campoPesquisa" type="text" placeholder="Pesquisar pelo id ou nome.">
+                <button type="button" class="btn btn-buscar" id="btnBuscar">Pesquisar</button>
             </div>
 
             <select class="form-select selectTipos" aria-label="Default select example">
-                <option selected>Tipo do pokemon</option>
+                <option selected>Pesquisar pelo Tipo</option>
                 <option value="grass">Grass</option>
                 <option value="fire">Fire</option>
                 <option value="water">Water</option>
@@ -50,7 +50,7 @@
                 <option value="dragon">Dragon</option>
             </select>
 
-            <button type="button" class="btn btn-filtrar" id="btnFiltrar">Filtrar</button>
+            <button type="button" class="btn btn-filtrar" id="btnFiltrar">Filtrar por tipo</button>
 
             <div class="modoClaroEmodoVoltar">
                 <button type="button" id="mudarCor" class="btn btn-secondary"><img class="imgThemeDarkOrWhite" src="./img/lua.png" alt="icone da lua" width="30"></button>
@@ -88,7 +88,12 @@
     </main>
 
     <aside class="aside-direito">
-        
+        <div class="card cardStatus-2">
+            <img src="./img/avatar.png" class="card-img-top img-saberMais" alt="imagem do pokemon ditto">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+          </div>
     </aside>
 
     <script src="./js/mudarCor.js"></script>

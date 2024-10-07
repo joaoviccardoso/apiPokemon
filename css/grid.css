@@ -89,4 +89,8 @@ body{
     .main-centro{
         grid-area: centro;
     }
+
+    .cardStatus-2{
+        display: none;
+    }
 }

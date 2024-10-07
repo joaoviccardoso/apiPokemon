@@ -58,6 +58,13 @@ function btnSaberMaisPokemon(){
   })
 }
 
+const imgPokebola = document.querySelector(".imgPokebola");
+
+imgPokebola.addEventListener("click", (event) =>{
+  const idDaImg = event.target.id;
+  somDoPokemon(idDaImg)
+})
+
 function somDoPokemon(id){
   const audio = new Audio(`${listaDosPokemons[id].cries.latest}`)
   audio.play()
