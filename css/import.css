@@ -1,0 +1,8 @@
+@import url(reset.css);
+@import url(grid.css);
+@import url(responsivo.css);
+@import url(variaveis.css);
+@import url(componetes/aside-direito.css);
+@import url(componetes/aside-esquerdo.css);
+@import url(componetes/cabecalho.css);
+@import url(componetes/main-centro.css);

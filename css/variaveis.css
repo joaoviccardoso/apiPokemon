@@ -1,0 +1,16 @@
+:root{
+    --cor-azul-escuro:#92C7CF;
+    --cor-azul-claro:#AAD7D9;
+    --cor-cinza-escuro:#E5E1DA;
+    --cor-cinza-claro:#FBF9F1;
+    --backgroud: #fcf8ff;
+    --card: #fff;
+    --title: #000;
+    --border: #ccc;
+
+    --title-black: #fff;
+    --background-dark: rgb(21, 32, 43);
+    --dark-items: rgba(29, 161, 242, 0.1);
+    --card-dark: rgb(37, 51, 65);
+    --font-roboto: "Roboto";
+}

@@ -36,6 +36,14 @@ body{
     grid-area: esquerda;
 }
 
+/*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
+.card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    background-color: var(--card);
+    color: var(--title);
+    width: 13rem;
+}
+
 /*o grid no media query so funciona no quanto esta na pasta do grid principa, sei o motivo nao kkkk*/
 
 @media only screen and (min-width: 280px) and (max-width: 879px){
