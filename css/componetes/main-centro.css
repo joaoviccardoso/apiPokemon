@@ -1,8 +1,10 @@
-@import url(variaveis.css);
+@import url(../variaveis.css);
 
 /*main-centro*/
 
  .lista__pokedex{
+    height: 90vh;
+    overflow-y: scroll;
      display: flex;
      align-items: center;
      justify-content: center;

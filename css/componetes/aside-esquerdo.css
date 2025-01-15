@@ -1,4 +1,4 @@
-@import url(variaveis.css);
+@import url(../variaveis.css);
 
 /*container input do aside esquerdo*/
 .container__input{
@@ -47,7 +47,7 @@
     align-items: center;
 
     gap: 1.2rem;
-    height: 550px;
+    height: 600px;
     width: 20rem;
 
     border: 1px solid var(--border);
