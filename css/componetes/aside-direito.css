@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .btn-saberMais{
    background-color: var(--cor-azul-claro);
    border-radius: 16px;
@@ -25,28 +26,31 @@
 
 .card-text{
     font-size: 1.2rem;
+    margin: 0;
+}
+
+.card-tipo-pai{
+    border-radius: 8px;
+    margin: .5rem;
+    padding: .2rem;
+}
+
+.card-atriFisico{
+    border-radius: 8px;
+    background-color: var(--cor-cinza-escuro);
+    padding: .4rem;
+    margin: .5rem;
 }
 
 .cardStatus{
     width: 20rem;
-    height: 35rem;
+    height: 45rem;
 
-    position: fixed;
-    top: 15%;
-    right: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cardStatus-2{
-    position: fixed;
-    top: 15%;
-    right: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 

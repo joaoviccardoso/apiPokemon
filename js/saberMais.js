@@ -47,20 +47,26 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
     // Atualiza o container com as informações detalhadas do Pokémon
     containerSaberMais.innerHTML = `
         <div class="card cardStatus">
-            <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.other.showdown.front_default}" class="card-img-top img-saberMais" alt="${listaDosPokemons[numeroDoIdDoBtn].name}">
-            <div class="card-body">
-              <h5 class="card-title">${listaDosPokemons[numeroDoIdDoBtn].name}</h5>
-              <p class="card-text">${listaDosPokemons[numeroDoIdDoBtn].types.map(type => type.type.name)}</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Peso: ${listaDosPokemons[numeroDoIdDoBtn].weight / 10}Kg</li>
-              <li class="list-group-item">Altura: ${listaDosPokemons[numeroDoIdDoBtn].height / 10}m</li>
+            <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="card-img-top img-saberMais" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
+            <ul class="m-0 p-0 d-flex flex-column">
+
+                <li class="d-flex flex-column justify-content-center align-items-center">
+                    <p class="card-text">#${listaDosPokemons[numeroDoIdDoBtn].id}</p>
+                    <h5 class="card-title">${listaDosPokemons[numeroDoIdDoBtn].name}</h5>
+                </li>
+                <li class="d-flex justify-content-center">
+                    ${listaDosPokemons[numeroDoIdDoBtn].types.map(type => `<p class="card-tipo-pai ${type.type.name}">${type.type.name}</p>`).join('')}
+                </li>
+                <li class="d-flex">
+                    <p class="card-atriFisico">Peso: ${listaDosPokemons[numeroDoIdDoBtn].weight / 10}Kg</p>
+                    <p class="card-atriFisico">Altura: ${listaDosPokemons[numeroDoIdDoBtn].height / 10}m</p>
+                </li>
             </ul>
             <div class="card-body">
               <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btn-saberMais d-none d-sm-block">Som do Pokemon</button>
               <button type="button" id="botaoSomCelular-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn btnSomCelular d-sm-none">Som</button>
             </div>
-          </div>
+        </div>
     `;
     
     // Associa o evento ao botão de som após a criação do card
@@ -105,4 +111,5 @@ function somDoPokemon(id){
     // Toca o som do Pokémon
     audio.play();
 }
+
 

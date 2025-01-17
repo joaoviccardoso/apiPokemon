@@ -37,13 +37,11 @@ function criarCardPokemon(pokemon) {
             <div class="card">
                 <!-- Imagem do Pokémon -->
                 <img src="${pokemon.sprites.front_default}" class="card-img-top img-card-pokemon" alt="${pokemon.name}">
-                <div class="card-body">
+                <div class="card-body-main">
                     <!-- Número de identificação do Pokémon -->
                     <p class="card-text">#${pokemon.id.toString()}</p>
                     <!-- Nome do Pokémon, com a primeira letra maiúscula -->
                     <h5 class="card-title">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
-                    <!-- Tipos do Pokémon (ex: Fogo, Água) -->
-                    <p class="card-text">${pokemon.types.map(type => type.type.name)}</p>
                     <!-- Botão "Saber mais" visível apenas em dispositivos não móveis -->
                     <button type="button" id="botao-${pokemon.id}" class="btn btn-success d-none d-sm-block">Saber mais</button>
                     <!-- Botão "Som" visível apenas em dispositivos móveis -->
