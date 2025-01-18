@@ -1,12 +1,6 @@
 @import url(../variaveis.css);
 
 /*container input do aside esquerdo*/
-.container__input{
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
- }
- 
  .input__pesquisa{
      width: 72%;
      height: 50px;
@@ -23,10 +17,10 @@
  }
  
  .btn-buscar{
-     background-color: var(--cor-azul-claro);
-     border: 1px solid var(--cor-azul-claro);
-     border-radius: 32px;
-     margin-left: 0.8rem
+    background-color: var(--cor-azul-claro);
+    border: none;
+    border-radius: 32px;
+    margin-left: 0.8rem
  }
  
  .btn-buscar:hover{
@@ -55,10 +49,6 @@
     background: var(--card);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     color:var(--title);
-   
-    position: fixed;
-    top: 15%;
-    left: 5rem;
 }
 
 .imgPokebola{
@@ -81,22 +71,11 @@
 }
 
 .minhas__redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-
-    width: 83%;
-    height: 70px;
-    padding: .3rem;
-    position: absolute;
-    bottom: 1%;
-  
     background-color: var(--cor-azul-escuro);
     border-radius: 64px;
     border: 1px solid var(--cor-azul-escuro);
-  
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: .8rem;
 }
 
 .lista{
