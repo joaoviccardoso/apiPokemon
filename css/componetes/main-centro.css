@@ -25,3 +25,8 @@
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.btn-saberMais{
+    background-color: var(--cor-cinza-escuro);
+    height: 35px;
+}

@@ -7,24 +7,31 @@
     justify-content: center;
 }
 
-.btn-saberMais{
-   background-color: var(--cor-azul-claro);
-   border-radius: 16px;
-}
-
-.btn-saberMais:hover{
-    background-color: var(--cor-azul-escuro);
-}
-
 .img-saberMais{
     width: 60%;
 }
 
+.botao{
+    font-family: var(--font-roboto);
+    border: none;
+    border-radius: 32px;
+    margin-left: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.botao:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
 .card-title{
+    font-family: var(--font-roboto);
     font-size: 1.5rem;
 }
 
 .card-text{
+    font-family: var(--font-roboto);
     font-size: 1.2rem;
     margin: 0;
 }

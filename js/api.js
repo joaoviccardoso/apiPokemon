@@ -34,7 +34,7 @@ function criarCardPokemon(pokemon) {
     // Adiciona o HTML do card dentro do containerPokemons, criando um item da lista para cada Pokémon
     containerPokemons.innerHTML += `
         <li class="lista__pokemon">
-            <div class="card ">
+            <div class="card">
                 <!-- Imagem do Pokémon -->
                 <img src="${pokemon.sprites.front_default}" class="img-card-pokemon ${pokemon.types[0].type.name}" alt="${pokemon.name}">
                 <div class="card-body-main">
@@ -43,7 +43,7 @@ function criarCardPokemon(pokemon) {
                     <!-- Nome do Pokémon, com a primeira letra maiúscula -->
                     <h5 class="card-title">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
                     <!-- Botão "Saber mais" visível apenas em dispositivos não móveis -->
-                    <button type="button" id="botao-${pokemon.id}" class="btn btn-success d-none d-sm-block">Saber mais</button>
+                    <button type="button" id="botao-${pokemon.id}" class="btn-success btn-saberMais botao d-none d-sm-block">Saber mais</button>
                     <!-- Botão "Som" visível apenas em dispositivos móveis -->
                     <button type="button" id="botaoSomCelular-${pokemon.id}" class="btn btnSomCelular d-sm-none">Som</button>
                 </div>

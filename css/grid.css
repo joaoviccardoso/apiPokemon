@@ -16,7 +16,6 @@ body{
 
 .cabecalho{
     grid-area: header;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +27,6 @@ body{
 
 .aside-direito{
     grid-area: direita;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +67,6 @@ body{
     .aside__container__esquerdo{
         display: flex;
         justify-content: center;
-
         margin: 1rem;
     }
 
