@@ -4,12 +4,12 @@
  .lista__pokedex{
     height: 90vh;
     overflow-y: scroll;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;
-     gap: 1.5rem;
-     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
  }
 
 .card-body-main{
@@ -18,4 +18,10 @@
     align-items: center;
     justify-content: center;
     padding: 0 0 .5rem 0;
+}
+
+.img-card-pokemon{
+    margin: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

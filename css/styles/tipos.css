@@ -1,63 +1,63 @@
 .grass{
-    background-color: #50C878;
+    background: linear-gradient(135deg, #50C878, #2E8B57);
 }
 
 .poison{
-    background-color: #8A2BE2;
+    background: linear-gradient(135deg, #8A2BE2, #4B0082);
 }
 
 .fire{
-    background-color: #E25822;
+    background: linear-gradient(135deg, #E25822, #A83212);
 }
 
-.flying{
-    background-color: #AFEEEE;
+.flying {
+    background: linear-gradient(135deg, #AFEEEE, #87CEEB);
 }
 
-.water{
-    background-color: #4169E1;
+.water {
+    background: linear-gradient(135deg, #4169E1, #1E90FF);
 }
 
-.bug{
-    background-color: #00FA9A;
+.bug {
+    background: linear-gradient(135deg, #00FA9A, #3CB371);
 }
 
-.normal{
-    background-color: #E5E1DA;
+.normal {
+    background: linear-gradient(135deg, #E5E1DA, #D3CFC4);
 }
 
-.electric{
-    background-color: #FFEF00;
+.electric {
+    background: linear-gradient(135deg, #FFEF00, #FFD700);
 }
 
-.ground{
-    background-color: #C2B280;
+.ground {
+    background: linear-gradient(135deg, #C2B280, #8B795E);
 }
 
-.fairy{
-    background-color: #FFD1DC   ;
+.fairy {
+    background: linear-gradient(135deg, #FFD1DC, #FFB6C1);
 }
 
-.fighting{
-    background-color: #B7410E;
+.fighting {
+    background: linear-gradient(135deg, #B7410E, #8B0000);
 }
 
-.psychic{
-    background-color: #800080;
+.psychic {
+    background: linear-gradient(135deg, #800080, #DA70D6);
 }
 
-.rock{
-    background-color: #A0522D;
+.rock {
+    background: linear-gradient(135deg, #A0522D, #8B4513);
 }
 
-.ice{
-    background-color: #E0FFFF;
+.ice {
+    background: linear-gradient(135deg, #E0FFFF, #B0E0E6);
 }
 
-.ghost{
-    background-color: #F8F8FF;
+.ghost {
+    background: linear-gradient(135deg, #F8F8FF, #D8BFD8);
 }
 
-.dragon{
-    background-color: #C0C0C0;
+.dragon {
+    background: linear-gradient(135deg, #C0C0C0, #A9A9A9);
 }
