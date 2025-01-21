@@ -43,9 +43,7 @@ function criarCardPokemon(pokemon) {
                     <!-- Nome do Pokémon, com a primeira letra maiúscula -->
                     <h5 class="card-title">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
                     <!-- Botão "Saber mais" visível apenas em dispositivos não móveis -->
-                    <button type="button" id="botao-${pokemon.id}" class="btn-success btn-saberMais botao d-none d-sm-block">Saber mais</button>
-                    <!-- Botão "Som" visível apenas em dispositivos móveis -->
-                    <button type="button" id="botaoSomCelular-${pokemon.id}" class="btn btnSomCelular d-sm-none">Som</button>
+                    <button type="button" id="botao-${pokemon.id}" class="btn-success btn-saberMais botao">Saber mais</button>
                 </div>
             </div>
         </li>

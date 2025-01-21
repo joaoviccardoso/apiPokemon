@@ -8,7 +8,7 @@
   
     margin-top: 1rem;
     padding: 0.2rem;
-    width: 30%;
+    width: 20rem;
     height: 100px;
   
     background-color: var(--cor-azul-escuro);
@@ -16,9 +16,5 @@
     border: 1px solid var(--cor-azul-escuro);
   
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  }
-  
-  .titulo_cabecalho{
-      font-size: 2rem;
   }
   

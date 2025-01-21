@@ -1,29 +1,43 @@
-@media only screen and (min-width: 1100px) and (max-width: 1399px){
-    .cardStatus{
-        width: 300px;
-        right: 1.9rem;
+@media only screen and (min-width: 280px) and (max-width: 879px){
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "header"
+            "select"
+            "centro"
+        ;
     }
 
-    .container__select{
-        width: 280px;
-        left: 1.9rem;
+    .cabecalho{
+        grid-area: header;
+        margin-bottom: 1rem;
     }
 
-}
-
-@media only screen and (min-width: 880px) and (max-width: 1099px){
-    .cardStatus{
-        width: 200px;
-        right: 2rem;
+    /*container menu*/
+    .aside__container__esquerdo{
+        grid-area: select;
     }
 
-    .container__select{
-        width: 200px;
-        left: 1rem;
+    /*main centro lugar que vai aparecer os card dos pokemons*/
+    .main-centro{
+        grid-area: centro;
     }
 
-    .titulo__rede{
+    .lista__pokedex{
+        padding: 0;
+    }
+
+    .logoPokemon{
         display: none;
     }
-}
 
+    .cardPokemons{
+        width: 9rem;
+    }
+
+    .aside-direito{
+        grid-area: centro;
+    }
+}
