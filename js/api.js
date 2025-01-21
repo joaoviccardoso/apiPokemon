@@ -34,7 +34,7 @@ function criarCardPokemon(pokemon) {
     // Adiciona o HTML do card dentro do containerPokemons, criando um item da lista para cada Pokémon
     containerPokemons.innerHTML += `
         <li class="lista__pokemon">
-            <div class="card">
+            <div class="card text-bg-dark cardPokemons">
                 <!-- Imagem do Pokémon -->
                 <img src="${pokemon.sprites.front_default}" class="img-card-pokemon ${pokemon.types[0].type.name}" alt="${pokemon.name}">
                 <div class="card-body-main">

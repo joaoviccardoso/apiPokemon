@@ -46,8 +46,8 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
     
     // Atualiza o container com as informações detalhadas do Pokémon
     containerSaberMais.innerHTML = `
-        <div class="card cardStatus">
-            <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="card-img-top img-saberMais" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
+        <div class="card text-bg-dark cardStatus">
+            <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="img-card-pokemonSaberMais ${listaDosPokemons[numeroDoIdDoBtn].types[0].type.name}" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
             <ul class="m-0 p-0 d-flex flex-column">
 
                 <li class="d-flex flex-column justify-content-center align-items-center">

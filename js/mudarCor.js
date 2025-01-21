@@ -1,5 +1,5 @@
 // Seleciona o botão que vai mudar o tema (claro/escuro)
-const btnMudarCor = document.getElementById("mudarCor");
+//const btnMudarCor = document.getElementById("mudarCor");
 
 // Seleciona a imagem do ícone que vai ser trocada (sol/lua) dependendo do tema
 const imgDarkOrWhite = document.querySelector(".imgThemeDarkOrWhite");

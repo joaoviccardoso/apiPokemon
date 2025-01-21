@@ -48,13 +48,13 @@ function criarPokemonsFiltrados(resuldados){
     resuldados.forEach(resuldado => { 
         containerPokemonsFiltratos.innerHTML += `
          <li class="lista__pokemon">
-            <div class="card">
-                <img src="${resuldado.sprites.front_default}" class="card-img-top img-card-pokemon" alt="${resuldado.name}">
+            <div class="card text-bg-dark">
+                <img src="${resuldado.sprites.front_default}" class="img-card-pokemon ${resuldado.types[0].type.name}" alt="${resuldado.name}">
                 <div class="card-body">
                     <p class="card-text">#${resuldado.id.toString()}</p>
                     <h5 class="card-title">${resuldado.name[0].toUpperCase() + resuldado.name.substring(1)}</h5>
                     <p class="card-text">${resuldado.types.map(type => type.type.name)}</p>
-                    <button type="button" id="botao-${resuldado.id}" class="btn btn-success d-none d-sm-block">Saber mais</button>
+                    <button type="button" id="botao-${resuldado.id}" class="btn btn-success btn-saberMais d-none d-sm-block">Saber mais</button>
                     <button type="button" id="botaoSomCelular-${resuldado.id}" class="btn btnSomCelular d-sm-none">Som</button>
                 </div>
             </div>
