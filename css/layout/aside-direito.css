@@ -50,6 +50,14 @@
     border-radius: 50%;
 }
 
+.container-botao-fechar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
 
 
 

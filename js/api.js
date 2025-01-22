@@ -14,7 +14,6 @@ async function pokemons() {
     }
     // Após todos os Pokémons serem carregados, chama outras funções (não estão implementadas aqui)
     pegarBtnsSaberMais() // Função para gerenciar botões "Saber mais"
-    pegarSomParaCelular() // Função para gerenciar botões "Som" no celular
 }
 
 // Função assíncrona que busca os dados do Pokémon na API usando o ID

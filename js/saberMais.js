@@ -20,25 +20,6 @@ function pegarBtnsSaberMais(){
     });
 }
 
-// Função para associar o evento de clique nos botões de som no modo celular
-function pegarSomParaCelular(){
-    // Seleciona todos os botões de som no modo celular
-    const btnsSomPokemonCelular = document.querySelectorAll(".btnSomCelular");
-    
-    // Adiciona um evento de clique a cada botão de som
-    btnsSomPokemonCelular.forEach(function(btn){
-        btn.addEventListener('click', function(){
-            // Pega o ID do botão e extrai o número do Pokémon a partir do ID
-            const idDoBtnSom = this.id;
-            const idDoBtnSomString = idDoBtnSom.split("-")[1];
-            const numeroDoIdDoBtnSom = Number(idDoBtnSomString) - 1;
-            
-            // Chama a função para tocar o som do Pokémon
-            somDoPokemon(numeroDoIdDoBtnSom);
-        });
-    });
-}
-
 // Função para exibir mais informações sobre o Pokémon selecionado
 function saberMaisSobrePokemon(numeroDoIdDoBtn){
     // Exibe as informações do Pokémon no console (apenas para debug)
@@ -47,6 +28,9 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
     // Atualiza o container com as informações detalhadas do Pokémon
     containerSaberMais.innerHTML = `
         <div class="card text-bg-dark cardStatus">
+            <div class="container-botao-fechar">
+                <button type="button" class="btn-fechar" id="fecharJanela">fechar</button>
+            </div>
             <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="img-card-pokemonSaberMais ${listaDosPokemons[numeroDoIdDoBtn].types[0].type.name}" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
             <ul class="m-0 p-0 d-flex flex-column">
 
@@ -63,27 +47,30 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
                 </li>
             </ul>
             <div class="card-body">
-              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn-saberMais botao">Som do Pokemon</button>
+              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn-saberMais btn-som botao">Som do Pokemon</button>
             </div>
         </div>
     `;
     
     // Associa o evento ao botão de som após a criação do card
     btnSaberMaisPokemon();
-    pegarSomParaCelular();
+    fechar()
 }
 
 // Função para tocar o som do Pokémon ao clicar no botão "Som"
 function btnSaberMaisPokemon(){
     // Seleciona o botão "Som do Pokémon" dentro do card
-    const btnSaberMais = document.querySelector(".btn-saberMais"); 
+    const btnSaberMais = document.querySelector(".btn-som"); 
+    console.log(btnSaberMais)
     
     // Adiciona o evento de clique ao botão
     btnSaberMais.addEventListener('click', function() {
         // Pega o ID do botão e extrai o número do Pokémon a partir do ID
         const idBtnSaberMais = this.id;
+        console.log(idBtnSaberMais)
         const idBtnSaberMaisString = idBtnSaberMais.split("-")[1];
         const idBtnSaberMaisNumero = Number(idBtnSaberMaisString) - 1;
+        console.log(idBtnSaberMaisNumero)
         
         // Chama a função para tocar o som do Pokémon
         somDoPokemon(idBtnSaberMaisNumero);
@@ -109,6 +96,18 @@ function somDoPokemon(id){
     
     // Toca o som do Pokémon
     audio.play();
+}
+
+function fechar(){
+    const botaoFecharJanela = document.getElementById("fecharJanela");
+
+    botaoFecharJanela.addEventListener("click", (event) =>{
+        event.preventDefault()
+
+        containerSaberMais.innerHTML = `
+            <img src="./img/image.png" alt="logo pokemon" class="logoPokemon">
+        `
+    })
 }
 
 
