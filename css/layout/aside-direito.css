@@ -25,7 +25,8 @@
 .card-tipo-pai{
     border-radius: 8px;
     margin: .5rem;
-    padding: .2rem;
+    padding:.2rem .8rem;
+    font-weight: 500;
 }
 
 .card-atriFisico{

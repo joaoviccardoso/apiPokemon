@@ -29,7 +29,7 @@ function saberMaisSobrePokemon(numeroDoIdDoBtn){
     containerSaberMais.innerHTML = `
         <div class="card text-bg-dark cardStatus">
             <div class="container-botao-fechar">
-                <button type="button" class="btn-fechar" id="fecharJanela">fechar</button>
+                <button type="button" class="btn-fechar" id="fecharJanela"><img src="./img/perto.png" alt="fechar" width="40"></button>
             </div>
             <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="img-card-pokemonSaberMais ${listaDosPokemons[numeroDoIdDoBtn].types[0].type.name}" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
             <ul class="m-0 p-0 d-flex flex-column">
