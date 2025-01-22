@@ -7,8 +7,7 @@ body{
       "header header header"
       "esquerda centro direita"
       "footer footer footer";
-    background-color: #000;
-    background-image: url(../img/pokemonss-removebg-preview.png);
+    background: linear-gradient(to bottom, #5bc0f8, #1c1c3c);
     font-family: var(--font-roboto);
     font-weight: 500;
 }
@@ -42,4 +41,5 @@ body{
     color: var(--title);
     width: 13rem;
 }
+
 

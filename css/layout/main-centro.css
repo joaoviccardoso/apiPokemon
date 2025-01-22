@@ -29,11 +29,6 @@
     0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
-.btn-saberMais{
-    background-color: var(--cor-cinza-escuro);
-    height: 35px;
-}
-
 .logoPokemon{
     width: 480px;
 }

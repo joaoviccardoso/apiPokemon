@@ -21,19 +21,6 @@
     height: 50px;
  }
  
- .btn-buscar{
-    background-color: var(--cor-azul-claro);
- }
- 
- .btn-buscar:hover{
-    background-color: var(--cor-azul-escuro);
- }
- 
- .btnSomCelular{
-     background: var(--cor-azul-escuro);
-     border-radius: 8px;
- }
-
 /*Aside esquerda*/
 
 .container__select{

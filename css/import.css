@@ -1,9 +1,10 @@
-@import url(styles/reset.css);
+@import url(reset.css);
 @import url(grid.css);
 @import url(responsivo.css);
 @import url(styles/variaveis.css);
 @import url(styles/tipos.css);
-@import url(componetes/aside-direito.css);
-@import url(componetes/aside-esquerdo.css);
-@import url(componetes/cabecalho.css);
-@import url(componetes/main-centro.css);
+@import url(layout/aside-direito.css);
+@import url(layout/aside-esquerdo.css);
+@import url(layout/cabecalho.css);
+@import url(layout/main-centro.css);
+@import url(styles/botoes.css)

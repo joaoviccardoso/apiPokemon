@@ -3,7 +3,7 @@
     --cor-azul-claro:#3466AF ;
     --cor-cinza-escuro:#B3B6B7;
     --cor-cinza-claro:#FBF9F1;
-    --backgroud: #fcf8ff;
+    --backgroud: linear-gradient(to bottom, #5bc0f8, #1c1c3c);
     --card: #202428;
     --title: #000;
     --border: #ccc;
