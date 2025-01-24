@@ -7,7 +7,7 @@ btnFiltrar.addEventListener('click', function(){
     const resuldadoSelect = document.querySelector(".selectTipos").value; 
     
     // Verifica se o usuário não escolheu um tipo válido (ou deixou a opção padrão)
-    if(resuldadoSelect == "Tipo do pokemon"){
+    if(resuldadoSelect === "Pesquisar pelo Tipo"){
         alert("Coloque um tipo do pokemon para pesquisar"); // Alerta o usuário que é necessário selecionar um tipo
         return; // Interrompe a execução se não houver um tipo válido
     }
