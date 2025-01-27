@@ -1,13 +1,14 @@
 import { getApi } from "./api/api.js";
-import { criarPokemonsFiltrados } from "./componentes/cardPesquisarNome.js";
 import { criarCardPokemon } from "./componentes/cards.js";
+import { filtrarPokemonPorNomeOuId } from "./componentes/pesquisarNome.js";
+import { filtrarPorSelectType } from "./componentes/pesquisarSelect.js";
 
 // Define o número de Pokémons a ser carregado (151 no caso, da primeira geração)
 let contadorDePokemons = 151;
 // Array que vai armazenar todos os dados dos Pokémons buscados
-let listaDosPokemons = [];
+export let listaDosPokemons = [];
 // Seleciona o botão de pesquisar Pokémon
-const btnPesquisar = document.getElementById("btnBuscar");
+
 
 // Função principal para carregar os Pokémons
 async function pokemons() {
@@ -22,37 +23,15 @@ async function pokemons() {
     pegarBtnsSaberMais() // Função para gerenciar botões "Saber mais"
 }
 
+// Seleciona o botão de pesquisar por nome 
+const btnPesquisar = document.getElementById("btnBuscar");
 // Adiciona um evento de clique ao botão de pesquisar
-btnPesquisar.addEventListener("click", async () => {
+btnPesquisar.addEventListener("click", filtrarPokemonPorNomeOuId)
 
-    // Pega o valor do campo de pesquisa (input)
-    const inputPesquisar = document.getElementById("campoPesquisa").value;
-  
-    try{
-    // Verifica se o campo de pesquisa está vazio ou contém apenas espaços
-        if(inputPesquisar == "" || inputPesquisar.trim() === ""){
-            alert("Digite um nome de um pokemon ou seu número"); // Exibe um alerta se o campo estiver vazio
-            return; // Sai da função para evitar execução desnecessária
-        }
-
-    // Converte o valor do input para minúsculas e remove acentos
-    const inputPesquisarMinusculo = removerAcentos(inputPesquisar.toLowerCase());
-    
-    const pokemon = await getApi(inputPesquisarMinusculo)
-    console.log(pokemon)
-    criarPokemonsFiltrados(pokemon)
-
-    }catch{
-        alert(`coloque o nome completo do pokemon`)
-    }
-
-});
-
-// Função que remove acentos de uma string para facilitar a pesquisa
-function removerAcentos(nome){
-    // Normaliza a string e remove caracteres diacríticos (acentos)
-    return nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
+// Seleciona o botão de filtrar
+const btnFiltrar = document.getElementById("btnFiltrar");
+// Adiciona um evento de clique ao botão de filtrar
+btnFiltrar.addEventListener('click', filtrarPorSelectType);
 
 // Chama a função principal para começar o processo de carregamento dos Pokémons
 pokemons();
