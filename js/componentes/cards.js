@@ -1,3 +1,5 @@
+import { pegarBtnsSaberMais } from "../utilitarias/pegarIdBtn.js";
+
 // Seleciona o container onde os cards dos Pokémons serão exibidos
 const containerPokemons = document.querySelector('.lista__pokedex');
 
@@ -43,7 +45,7 @@ export function criarPokemonPeloNomeOuID(resuldado){
         </li>`
 
         // Chama as funções que lidam com o botão "Saber mais" e o botão "Som"
-        //pegarBtnsSaberMais();
+        pegarBtnsSaberMais();
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,7 +67,7 @@ export function criarPokemonsFiltrados(resuldados){
         </li>
         `;
         // Chama as funções que lidam com o botão "Saber mais" e o botão "Som"
-        //pegarBtnsSaberMais();
+        pegarBtnsSaberMais();
         
     });
 }
