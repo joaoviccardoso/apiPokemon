@@ -1,36 +1,29 @@
-// Seleciona o botão que vai mudar o tema (claro/escuro)
-//const btnMudarCor = document.getElementById("mudarCor");
+import { thisIsDarkModel } from "../app.js";
 
-// Seleciona a imagem do ícone que vai ser trocada (sol/lua) dependendo do tema
-const imgDarkOrWhite = document.querySelector(".imgThemeDarkOrWhite");
-
-// Variável que controla o estado atual do tema (inicia como tema claro)
-let thisIsDarkModel = false;
-
-// Adiciona um evento de clique no botão de mudar tema
-btnMudarCor.addEventListener('click', () => {
+export function verificarBtnThema(){
    // Verifica o estado atual e alterna entre tema claro e escuro
-   if(thisIsDarkModel){
-      // Se já estiver no modo escuro, muda para o modo claro
-      thisIsDarkModel = false;
-   } else {
-      // Se estiver no modo claro, muda para o modo escuro
-      thisIsDarkModel = true;
-   }
-    
-   // Chama a função que aplica o tema correspondente
-   chargeTheTheme();
-});
+      if(thisIsDarkModel.tema){
+         // Se já estiver no modo escuro, muda para o modo claro
+         console.log("verdade")
+         thisIsDarkModel.tema = false;
+      } else {
+         // Se estiver no modo claro, muda para o modo escuro
+         console.log("falso")
+         thisIsDarkModel.tema = true;
+      }
+        
+      // Chama a função que aplica o tema correspondente
+      chargeTheTheme(thisIsDarkModel);
+}
+
 
 // Função que carrega o tema baseado no valor de thisIsDarkModel
 function chargeTheTheme(){
    // Se estiver no modo escuro, aplica o tema escuro e troca a imagem para o ícone de sol
    if(thisIsDarkModel){
-      imgDarkOrWhite.src = "img/sol.png";  // Muda o ícone para "sol" (tema escuro)
       blackTheme();  // Aplica o tema escuro
    } else {
       // Se estiver no modo claro, aplica o tema claro e troca a imagem para o ícone de lua
-      imgDarkOrWhite.src = "img/lua.png";  // Muda o ícone para "lua" (tema claro)
       whiteTheme();  // Aplica o tema claro
    }
 }
