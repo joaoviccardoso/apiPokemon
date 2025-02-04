@@ -7,7 +7,7 @@ body{
       "header header header"
       "esquerda centro direita"
       "footer footer footer";
-    background: linear-gradient(to bottom, #5bc0f8, #1c1c3c);
+    background: var(--backgroud);
     font-family: var(--font-roboto);
     font-weight: 500;
 }

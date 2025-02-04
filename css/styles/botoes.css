@@ -7,6 +7,7 @@
     border: none;
     border-radius: 32px;
     margin-left: 0.8rem;
+    text-decoration: none;
     box-shadow: 
     0 2px 4px rgba(255, 255, 255, 0.1), 
     0 4px 8px rgba(255, 255, 255, 0.05);
@@ -16,6 +17,18 @@
 .botao:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transform: translateY(2px);
+}
+
+/*botao do header*/
+.btn-mudarCor{
+    color: var( --cor-cinza-claro);
+    width: 6rem;
+    background: var(--backgroud);
+}
+
+.btn-home{
+    width: 6rem;
+    background-color: var(--cor-azul-claro);
 }
 
 /*botao do main*/
