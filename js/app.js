@@ -23,8 +23,9 @@ async function pokemons() {
         const pokemon = await getApi(i) // Chama a função que busca a API para cada id de Pokémon
         listaDosPokemons.push(pokemon)
         criarCardPokemon(pokemon);
+        pegarBtnsSaberMais() // Função para gerenciar botões "Saber mais"
     }
-    pegarBtnsSaberMais() // Função para gerenciar botões "Saber mais"
+    
 }
 
 // Seleciona o botão de pesquisar por nome 

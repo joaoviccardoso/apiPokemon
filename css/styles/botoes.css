@@ -21,38 +21,40 @@
 
 /*botao do header*/
 .btn-mudarCor{
-    color: var( --cor-cinza-claro);
+    color: var(--cor-cinza-claro);
     width: 6rem;
     background: var(--backgroud);
 }
 
 .btn-home{
     width: 6rem;
-    background-color: var(--cor-azul-claro);
+    background: var(--backgroud);
 }
 
 /*botao do main*/
 .btn-saberMais{
-    background-color: var(--cor-cinza-escuro);
+    background: var(--cor-cinza-escuro);
     height: 40px;
 }
 
 /*botao do aside-esquerdo*/
 .btn-pesquisar{
-    background-color: var(--cor-azul-claro);
- }
+    background: var(--backgroud);
+    color: var(--cor-cinza-claro);
+}
  
 .btn-pesquisar:hover{
-    background-color: var(--cor-azul-escuro);
+    
 }
 
 .btn-filtrar{
-    background-color: var(--cor-azul-claro);
+    color: var(--cor-cinza-claro);
+    background: var(--backgroud);
     width: 130px;
  }
  
 .btn-filtrar:hover{
-    background-color: var(--cor-azul-escuro);
+   
 }
  
 

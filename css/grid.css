@@ -36,7 +36,7 @@ body{
 
 /*esse estilo esta sento aplicato para todos elementos de card do bootstrap*/
 .card{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: var(--card);
     color: var(--title);
     width: 13rem;
