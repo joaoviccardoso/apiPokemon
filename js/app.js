@@ -1,4 +1,4 @@
-import { getApi } from "./api/api.js";
+import { getApi, getEvolucaoApi } from "./api/api.js";
 import { criarCardPokemon } from "./componentes/cards.js";
 import { filtrarPokemonPorNomeOuId } from "./componentes/pesquisarNome.js";
 import { filtrarPorSelectType } from "./componentes/pesquisarSelect.js";
@@ -52,3 +52,5 @@ imgPokebola.addEventListener("click", (event) =>{
 
 // Chama a função principal para começar o processo de carregamento dos Pokémons
 pokemons();
+
+console.log(getEvolucaoApi())

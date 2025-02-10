@@ -1,3 +1,5 @@
+import { extrairEvolucoes } from "../utilitarias/extrairIdPokemon.js";
+
 // Função assíncrona que busca os dados do Pokémon na API usando o ID
 export async function getApi(id) {
     // Faz a requisição para a API do Pokémon passando o id
@@ -5,4 +7,20 @@ export async function getApi(id) {
     // Converte a resposta da API para JSON (dados do Pokémon)
     const pokemon = await respostaApi.json();
     return pokemon
+}
+
+export async function getEvolucaoApi() {
+    const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon-species/3/`)
+
+    const pokemon = await respostaApi.json();
+    console.log(pokemon)
+
+    const especieUrl = pokemon.evolution_chain.url;
+
+    const especieApi = await fetch(especieUrl);
+    const pokemonEspecie = await especieApi.json();
+    console.log(pokemonEspecie)
+
+    const listaEvolucaoPokemon = extrairEvolucoes(pokemonEspecie.chain)
+    console.log(listaEvolucaoPokemon)
 }
