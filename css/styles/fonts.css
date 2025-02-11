@@ -1,0 +1,8 @@
+@import url(../variaveis.css);
+
+.fontTextos{
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-cinza-claro);
+}

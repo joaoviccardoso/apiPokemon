@@ -28,18 +28,21 @@ export function saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon)
                     <p class="card-atriFisico">Altura: ${listaDosPokemons[numeroDoIdDoBtn].height / 10}m</p>
                 </li>
             </ul>
-            <div class="card-body">
-              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn-saberMais btn-som botao">Som do Pokemon</button>
-            </div>
+
             <h3 class="">Cadeia Evolutiva</h3>
             <ul class="listaCadeiaEvolutiva d-flex justify-content-center gap-3 ${listaDosPokemons[numeroDoIdDoBtn].types[0].type.name}">
                 ${cadeiaEvolutivaDoPokemon.map(pokemon => `
                     <li class="${pokemon.nome}">
                         <img class="img_cabecalho" src="${pokemon.imagem}" alt="${pokemon.nome}" width="70">
-                        <p class="">${pokemon.nome}</p>
+                        <p class="fontTextos d-flex justify-content-center">${pokemon.nome}</p>
                     </li>
                 `).join('')}
             </ul>
+
+            <div class="card-body">
+              <button type="button" id="botaoSaberMais-${listaDosPokemons[numeroDoIdDoBtn].id}" class="btn-saberMais btn-som botao">Som do Pokemon</button>
+            </div>
+            
         </div>
     `;
     

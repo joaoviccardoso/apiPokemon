@@ -1,6 +1,5 @@
 export function extrairEvolucoes(chain) {
     const evolucoes = [];
-    const niveis = [];
 
     function processarEvolucao(etapa) {
         const nome = etapa.species.name;
