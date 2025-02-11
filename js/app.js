@@ -53,4 +53,3 @@ imgPokebola.addEventListener("click", (event) =>{
 // Chama a função principal para começar o processo de carregamento dos Pokémons
 pokemons();
 
-console.log(getEvolucaoApi())

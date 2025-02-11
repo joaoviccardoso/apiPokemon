@@ -1,21 +1,23 @@
+import { getEvolucaoApi } from "../api/api.js";
 import { saberMaisSobrePokemon } from "../componentes/saberMaisCard.js";
 import { somDoPokemon } from "../componentes/somPokemon.js";
 
 // Função para associar o evento de clique nos botões "Saber mais"
-export function pegarBtnsSaberMais(){
+export async function pegarBtnsSaberMais(){
     // Seleciona todos os botões "Saber mais"
     const btnsPokemons = document.querySelectorAll(".btn-success");
     
     // Adiciona um evento de clique a cada botão
-    btnsPokemons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
+    btnsPokemons.forEach( async function(btn) {
+        btn.addEventListener('click', async function() {
             // Pega o ID do botão e extrai o número do Pokémon a partir do ID
             const idDoBtn = this.id;
             const idDoBtnString = idDoBtn.split("-")[1];
             const numeroDoIdDoBtn = Number(idDoBtnString) - 1;
+            const cadeiaEvolutivaDoPokemon = await getEvolucaoApi(idDoBtnString)
 
             // Chama a função para exibir as informações detalhadas do Pokémon
-            saberMaisSobrePokemon(numeroDoIdDoBtn);
+            saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon);
         });
     });
 }

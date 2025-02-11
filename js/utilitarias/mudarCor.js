@@ -21,10 +21,8 @@ export function verificarBtnThema(){
 function chargeTheTheme(){
    // Se estiver no modo escuro, aplica o tema escuro e troca a imagem para o ícone de sol
    if(thisIsDarkModel.tema){
-      console.log("verdade")
       blackTheme();  // Aplica o tema escuro
    } else {
-      console.log("falso")
       // Se estiver no modo claro, aplica o tema claro e troca a imagem para o ícone de lua
       whiteTheme();  // Aplica o tema claro
    }

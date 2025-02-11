@@ -9,18 +9,16 @@ export async function getApi(id) {
     return pokemon
 }
 
-export async function getEvolucaoApi() {
-    const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon-species/3/`)
+export async function getEvolucaoApi(id) {
+    const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
 
     const pokemon = await respostaApi.json();
-    console.log(pokemon)
 
     const especieUrl = pokemon.evolution_chain.url;
 
     const especieApi = await fetch(especieUrl);
     const pokemonEspecie = await especieApi.json();
-    console.log(pokemonEspecie)
 
     const listaEvolucaoPokemon = extrairEvolucoes(pokemonEspecie.chain)
-    console.log(listaEvolucaoPokemon)
+    return listaEvolucaoPokemon
 }
