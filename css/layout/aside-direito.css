@@ -37,7 +37,7 @@
 }
 
 .cardStatus{
-    width: 20rem;
+    width: 24rem;
     height: 45rem;
 
     display: flex;
@@ -60,6 +60,7 @@
 }
 
 .listaCadeiaEvolutiva{
+    width: 90%;
     margin: 0;
     padding: .1rem 1.5rem;
     border-radius: 32px;
