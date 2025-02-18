@@ -64,3 +64,7 @@
     border: none;
     background-color: var(--card);
 }
+
+.btn-primary{
+    background-color: none;
+}

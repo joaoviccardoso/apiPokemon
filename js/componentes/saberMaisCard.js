@@ -12,7 +12,7 @@ export function saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon)
         <div class="card text-bg-dark cardStatus">
 
             <div class="container-botao-fechar">
-                <button type="button" class="btn-adicionar" id="${numeroDoIdDoBtn}"><img src="./img/estrelaFavoritos.png" alt="fechar" width="40"></button>
+                <button class="btn-adicionar" id="${numeroDoIdDoBtn}" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./img/estrelaFavoritos.png" alt="fechar" width="40"></button>
                 <button type="button" class="btn-fechar" id="fecharJanela"><img src="./img/perto.png" alt="fechar" width="40"></button>
             </div>
 
