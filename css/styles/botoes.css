@@ -59,7 +59,7 @@
  
 
 /*botao do aside-direito*/
-.btn-fechar{
+.btn-fechar, .btn-adicionar{
     border-radius: 50%;
     border: none;
     background-color: var(--card);

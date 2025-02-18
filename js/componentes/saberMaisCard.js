@@ -1,6 +1,6 @@
 import { listaDosPokemons } from "../app.js";
+import { adicionarPokemonParaEquipe } from "../utilitarias/adicionarPokemon.js";
 import { btnSaberMaisPokemon } from "../utilitarias/pegarIdBtn.js";
-
 
 // Seleciona o container onde as informações detalhadas do Pokémon serão exibidas
 const containerSaberMais = document.querySelector(".aside-direito");
@@ -10,9 +10,12 @@ export function saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon)
     // Atualiza o container com as informações detalhadas do Pokémon
     containerSaberMais.innerHTML = `
         <div class="card text-bg-dark cardStatus">
+
             <div class="container-botao-fechar">
+                <button type="button" class="btn-adicionar" id="${numeroDoIdDoBtn}"><img src="./img/estrelaFavoritos.png" alt="fechar" width="40"></button>
                 <button type="button" class="btn-fechar" id="fecharJanela"><img src="./img/perto.png" alt="fechar" width="40"></button>
             </div>
+
             <img src="${listaDosPokemons[numeroDoIdDoBtn].sprites.front_default}" class="img-card-pokemonSaberMais ${listaDosPokemons[numeroDoIdDoBtn].types[0].type.name}" alt="${listaDosPokemons[numeroDoIdDoBtn].nome}">
             <ul class="m-0 p-0 d-flex flex-column">
 
@@ -50,9 +53,9 @@ export function saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon)
     `;
     
     // Associa o evento ao botão de som após a criação do card
-    console.log(cadeiaEvolutivaDoPokemon)
-    btnSaberMaisPokemon();
     fechar()
+    btnSaberMaisPokemon();
+    adicionarPokemonParaEquipe()
 }
 
 function fechar(){
@@ -66,5 +69,3 @@ function fechar(){
         `
     })
 }
-
-
