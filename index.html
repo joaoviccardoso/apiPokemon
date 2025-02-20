@@ -13,10 +13,16 @@
 <body class="body">
     
     <header class="cabecalho">
-        <div class="container__cabecalho">
-            <a href="./index.html"><img class="img_cabecalho" src="./img/pokeball.png" alt="imagem de uma pokeboll" width="50"></a>
-            <img src="./img/Pokédex_logo.png" alt="logo pokemon" width="110">
-        </div>
+        <nav class="container__cabecalho">
+            <a href="./index.html" class="botao btn-header d-flex align-items-center">
+                <img src="./img/pokeball.png" alt="logo pokebola" width="50">
+                <p class="fontTextos titulo-header">Home</p>
+            </a>
+            <a class="botao btn-header d-flex align-items-center" id="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <img src="./img/bola-ultra.png" alt="bola-ultra" width="50">
+                <p class="fontTextos titulo-header">Equipe</p>
+            </a>
+        </nav>
     </header>
 
     <aside class="aside__container__esquerdo d-flex align-items-center justify-content-center">

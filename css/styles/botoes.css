@@ -31,6 +31,10 @@
     background: var(--backgroud);
 }
 
+.titulo-header{
+    padding: 0 1rem;
+}
+
 /*botao do main*/
 .btn-saberMais{
     background: var(--cor-cinza-escuro);
@@ -38,13 +42,15 @@
 }
 
 /*botao do aside-esquerdo*/
-.btn-pesquisar{
+.btn-pesquisar {
     background: var(--backgroud);
     color: var(--cor-cinza-claro);
 }
- 
-.btn-pesquisar:hover{
-    
+
+.btn-header{
+    background: var(--backgroud);
+    color: var(--cor-cinza-claro);
+    border: none;
 }
 
 .btn-filtrar{
@@ -63,8 +69,4 @@
     border-radius: 50%;
     border: none;
     background-color: var(--card);
-}
-
-.btn-primary{
-    background-color: none;
 }
