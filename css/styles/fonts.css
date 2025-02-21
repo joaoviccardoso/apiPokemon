@@ -1,10 +1,14 @@
 @import url(../variaveis.css);
 
-.fontTextos{
+.fontTextos, .fontTitulos{
     font-family: var(--font-roboto);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     color: var(--cor-cinza-claro);
     margin: 0;
+}
+
+.fontTitulos{
+    font-size: 28px;
 }

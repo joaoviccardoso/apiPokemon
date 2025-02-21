@@ -38,8 +38,7 @@ export function saberMaisSobrePokemon(numeroDoIdDoBtn, cadeiaEvolutivaDoPokemon)
 
                     ${pokemon.minLevel ? `<p class="fontTextos fontLevel d-flex justify-content-center align-items-center">LVL: ${pokemon.minLevel}</p>` : ''}
                     <li class="${pokemon.nome} d-flex flex-column">
-                        <img class="img_cabecalho" src="${pokemon.imagem}" alt="${pokemon.nome}" width="60">
-                        <p class="fontTextos d-flex justify-content-center">${pokemon.nome}</p>
+                        <img class="img_cabecalho" src="${pokemon.imagem}" alt="${pokemon.nome}" width="70">
                     </li>
                     
                 `).join('')}
