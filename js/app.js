@@ -1,4 +1,4 @@
-import { getApi, getEvolucaoApi } from "./api/api.js";
+import { getApi } from "./api/api.js";
 import { criarCardPokemon } from "./componentes/cards.js";
 import { filtrarPokemonPorNomeOuId } from "./componentes/pesquisarNome.js";
 import { filtrarPorSelectType } from "./componentes/pesquisarSelect.js";
