@@ -1,4 +1,4 @@
-import { criarPokemonPeloNomeOuID} from "./cards.js";
+import { criarPokemonPeloNomeOuID } from "../componentes/cards.js";
 import { getApi } from "../api/api.js";
 import { removerAcentos } from "../utilitarias/formatarText.js";
 

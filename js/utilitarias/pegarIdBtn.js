@@ -1,6 +1,6 @@
 import { getEvolucaoApi } from "../api/api.js";
 import { saberMaisSobrePokemon } from "../componentes/saberMaisCard.js";
-import { somDoPokemon } from "../componentes/somPokemon.js";
+import { somDoPokemon } from "./somPokemon.js";
 
 // Função para associar o evento de clique nos botões "Saber mais"
 export async function pegarBtnsSaberMais(){

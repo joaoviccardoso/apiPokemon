@@ -1,5 +1,5 @@
 import { listaDosPokemons } from "../app.js";
-import { criarPokemonsFiltrados } from "./cards.js";
+import { criarPokemonsFiltrados } from "../componentes/cards.js";
 
 export function filtrarPorSelectType(){
      // Obtém o valor selecionado no dropdown (select) de tipos de Pokémon
