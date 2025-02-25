@@ -12,3 +12,13 @@ export async function adicionarPokemonParaEquipe(){
         criarCardPokemonEquipe(minhaEquipe)
     })
 }
+
+export function removePokemonDaEquibe(btns) {
+    btns.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+            const index = event.target.closest(".btn-remover").dataset.index;
+            minhaEquipe.splice(index, 1); 
+            criarCardPokemonEquipe(minhaEquipe); 
+        });
+    });
+}

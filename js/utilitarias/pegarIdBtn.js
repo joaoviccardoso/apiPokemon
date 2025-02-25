@@ -27,8 +27,7 @@ export async function pegarBtnsSaberMais(){
 // Função para tocar o som do Pokémon ao clicar no botão "Som"
 export function btnSaberMaisPokemon(){
     // Seleciona o botão "Som do Pokémon" dentro do card
-    const btnSaberMais = document.querySelector(".btn-som"); 
-    console.log(btnSaberMais)
+    const btnSaberMais = document.querySelector(".btn-som");
     
     // Adiciona o evento de clique ao botão
     btnSaberMais.addEventListener('click', function() {
