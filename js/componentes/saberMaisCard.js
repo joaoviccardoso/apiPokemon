@@ -1,5 +1,5 @@
 import { listaDosPokemons } from "../app.js";
-import { adicionarPokemonParaEquipe } from "../utilitarias/adicionarPokemon.js";
+import { adicionarPokemonParaEquipe } from "../view/adicionarPokemon.js";
 import { btnSaberMaisPokemon } from "../utilitarias/pegarIdBtn.js";
 
 // Seleciona o container onde as informações detalhadas do Pokémon serão exibidas

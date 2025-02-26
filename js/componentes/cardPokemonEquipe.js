@@ -1,4 +1,4 @@
-import { removePokemonDaEquibe } from "../utilitarias/adicionarPokemon.js";
+import { removePokemonDaEquibe } from "../view/adicionarPokemon.js";
 
 export function criarCardPokemonEquipe(listaDeObjetoPoke){
     const containerEquipe = document.querySelector(".offcanvas-body")
