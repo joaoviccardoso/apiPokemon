@@ -5,7 +5,7 @@ export function criarCardPokemonEquipe(listaDeObjetoPoke){
    
     containerEquipe.innerHTML = "";
 
-    listaDeObjetoPoke.forEach(pokemon => {
+    listaDeObjetoPoke.forEach((pokemon, index) => {
         const li = document.createElement("li");
         li.classList.add("pokemon__equipe", "d-flex", "justify-content-around", "align-items-center");
 
@@ -15,7 +15,9 @@ export function criarCardPokemonEquipe(listaDeObjetoPoke){
                     <h5 class="fontTitulos">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
                 </div>
                 <div class="">
-                    <button type="button" class="btn-remover" id=""><img src="./img/perto.png" alt="fechar" width="40"></button>
+                    <button type="button" class="btn-remover" id="${index}">
+                        <img src="./img/perto.png" alt="fechar" width="40">
+                    </button>
                 <div>
         `
 
