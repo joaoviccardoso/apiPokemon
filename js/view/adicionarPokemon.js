@@ -18,6 +18,7 @@ export async function adicionarPokemonParaEquipe(){
         }
         const idDoPokemon = Number(btnsAdiconarPokemon.id) + 1;
         const pokemonParaEquipe = await getApi(idDoPokemon) 
+        console.log(pokemonParaEquipe)
         minhaEquipe.push(pokemonParaEquipe)
         localStorage.setItem('MinhaEquipe', JSON.stringify(minhaEquipe))
         alterarContadorPokemon(minhaEquipe.length)

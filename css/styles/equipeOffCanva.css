@@ -6,3 +6,46 @@
     border-radius: 40px 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+.cardTipoEquipe{
+    display: inline-block;
+    border-radius: 8px;
+    margin: .1rem .3rem .1rem 0;
+    padding:.2rem .8rem;
+    font-weight: 500;
+}
+
+.Level{
+    margin: .3rem 0 0 0;
+}
+
+.barraDeVida {
+    width: 150px;  /* Define um tamanho fixo */
+    background: black;
+    padding: 2px;
+    border-radius: 8px;
+    overflow: hidden; /* Evita que a barra de vida ultrapasse os limites */
+    position: relative; /* Para que o span fique dentro */
+}
+
+.barraDeVida-span {
+    height: 15px;
+    width: 100%; /* Começa preenchida */
+    background: linear-gradient(135deg, #50C878, #2E8B57);
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp-texto {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: absolute; /* Permite posicionar dentro da barra */
+    width: 100%;
+    text-align: center;
+    position: end;
+}
+

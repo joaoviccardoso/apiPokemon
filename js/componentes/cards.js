@@ -22,6 +22,8 @@ export function criarCardPokemon(pokemon) {
             </div>
         </li>
     `;
+
+    
 }
 
 
