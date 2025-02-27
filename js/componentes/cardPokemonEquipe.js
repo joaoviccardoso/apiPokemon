@@ -1,4 +1,4 @@
-//import { calcularHP } from "../utilitarias/calcularHp.JS";
+import { calcularHP } from "../utilitarias/calcularHp.js";
 import { removePokemonDaEquibe } from "../view/adicionarPokemon.js";
 
 export function criarCardPokemonEquipe(listaDeObjetoPoke){
@@ -18,7 +18,7 @@ export function criarCardPokemonEquipe(listaDeObjetoPoke){
                     <h3 class="fontTextos Level">LV:50</h3>
                     <div class="barraDeVida">
                         <div class="barraDeVida-span d-flex">
-                            <span class="hp-texto d-flex justify-content-between"><p class="cardTipoEquipe">${pokemon.stats[0].stat.name.toUpperCase()} </p></span> 
+                            <span class="hp-texto d-flex justify-content-between"><p class="cardTipoEquipe">${pokemon.stats[0].stat.name.toUpperCase()} </p> <p class="cardTipoEquipe">${calcularHP(pokemon.stats[0].base_stat)}</p></span> 
                         </div>
                     </div>
 
