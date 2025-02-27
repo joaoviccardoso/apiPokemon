@@ -11,6 +11,8 @@ export async function getApi(id) {
 
 export async function getEvolucaoApi(id) {
     const respostaApi = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
+    console.log(`Buscando: https://pokeapi.co/api/v2/pokemon-species/${id}/`);
+
 
     const pokemon = await respostaApi.json();
 
