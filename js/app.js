@@ -6,7 +6,6 @@ import { somDoPokemon } from "./utilitarias/somPokemon.js";
 import { verificarBtnThema } from "./utilitarias/mudarCor.js";
 import { pegarBtnsSaberMais } from "./utilitarias/pegarIdBtn.js";
 
-
 // Variável que controla o estado atual do tema (inicia como tema claro)
 export let thisIsDarkModel = {
     tema: false

@@ -4,6 +4,7 @@
 .botao{
     font-family: var(--font-roboto);
     font-weight: 500;
+    background: none;
     border: none;
     border-radius: 32px;
     margin-left: 0.8rem;

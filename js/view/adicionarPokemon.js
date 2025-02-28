@@ -1,6 +1,7 @@
 import { getApi } from "../api/api.js";
 import { criarCardPokemonEquipe } from "../componentes/cardPokemonEquipe.js";
 import { alterarContadorPokemon } from "../utilitarias/contadorPokemonEquipe.js";
+import { mostrarDialog } from "../utilitarias/modal.js";
 
 export let minhaEquipe = JSON.parse(localStorage.getItem('MinhaEquipe')) || []
 
@@ -14,7 +15,7 @@ export async function adicionarPokemonParaEquipe(){
     btnsAdiconarPokemon.addEventListener('click', async () => {
 
         if(minhaEquipe.length === 6){
-            return alert('Quantidade maxima de pokemon na sua equipe')
+            return mostrarDialog("Quantidade maxima de pokemon na equipe")
         }
         const idDoPokemon = Number(btnsAdiconarPokemon.id) + 1;
         const pokemonParaEquipe = await getApi(idDoPokemon) 
