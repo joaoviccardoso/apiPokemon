@@ -34,17 +34,19 @@ export function criarPokemonPeloNomeOuID(resuldado){
 
         containerPokemons.innerHTML = "";
     // Itera sobre o array de resultados e cria um card para cada Pokémon
+        resuldado.forEach(pokemon => {
         containerPokemons.innerHTML += `
-         <li class="lista__pokemon">
-            <div class="card text-bg-dark">
-                <img src="${resuldado.sprites.front_default}" class="img-card-pokemon ${resuldado.types[0].type.name}" alt="${resuldado.name}">
-                <div class="card-body">
-                    <p class="card-text">#${resuldado.id.toString()}</p>
-                    <h5 class="card-title">${resuldado.name[0].toUpperCase() + resuldado.name.substring(1)}</h5>
-                    <button type="button" id="botao-${resuldado.id}" class="btn-success btn-saberMais botao">Saber mais</button>
+            <li class="lista__pokemon">
+                <div class="card text-bg-dark">
+                    <img src="${pokemon.sprites.front_default}" class="img-card-pokemon ${pokemon.types[0].type.name}" alt="${pokemon.name}">
+                    <div class="card-body">
+                        <p class="card-text">#${pokemon.id.toString()}</p>
+                        <h5 class="card-title">${pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h5>
+                        <button type="button" id="botao-${pokemon.id}" class="btn-success btn-saberMais botao">Saber mais</button>
+                    </div>
                 </div>
-            </div>
-        </li>`
+            </li>`;
+    });
 
         // Chama as funções que lidam com o botão "Saber mais" e o botão "Som"
         pegarBtnsSaberMais();

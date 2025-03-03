@@ -15,6 +15,10 @@
         margin-bottom: 1rem;
     }
 
+    .input__pesquisa{
+        margin: .5rem;
+    }
+    
     /*container menu*/
     .aside__container__esquerdo{
         grid-area: select;

@@ -1,5 +1,6 @@
 import { listaDosPokemons } from "../app.js";
 import { criarPokemonsFiltrados } from "../componentes/cards.js";
+import { mostrarDialog } from "../utilitarias/modal.js";
 
 export function filtrarPorSelectType(){
      // Obtém o valor selecionado no dropdown (select) de tipos de Pokémon
@@ -7,15 +8,14 @@ export function filtrarPorSelectType(){
     
      // Verifica se o usuário não escolheu um tipo válido (ou deixou a opção padrão)
      if(resuldadoSelect === "Pesquisar pelo Tipo"){
-         alert("Coloque um tipo do pokemon para pesquisar"); // Alerta o usuário que é necessário selecionar um tipo
-         return; // Interrompe a execução se não houver um tipo válido
+        mostrarDialog("Coloque um tipo do pokemon para pesquisar"); // Alerta o usuário que é necessário selecionar um tipo
+        return; // Interrompe a execução se não houver um tipo válido
      }
      
      // Filtra a lista de Pokémons de acordo com o tipo selecionado
      const pokemonResuldado = listaDosPokemons.filter(pokemon =>{
          // Extrai os tipos do Pokémon atual, criando um array com os tipos
          const typesPokemon = pokemon.types.map(type => type.type.name);
-         console.log(typesPokemon); // Exibe os tipos no console (para debug)
  
          // Retorna verdadeiro se o Pokémon contém o tipo selecionado
          return typesPokemon.includes(resuldadoSelect);
@@ -24,9 +24,10 @@ export function filtrarPorSelectType(){
      if (pokemonResuldado){
          // Chama a função para criar os cards dos Pokémons filtrados
         criarPokemonsFiltrados(pokemonResuldado);
+        document.querySelector(".selectTipos").selectedIndex = 0;
      } else {
          // Exibe um alerta se algo deu errado ou não encontrou nenhum Pokémon
-         alert("Ops... Ocorreu um erro");
+        mostrarDialog("Ops... Ocorreu um erro ou nem um pokemon encotrando");
      }
 }    
    

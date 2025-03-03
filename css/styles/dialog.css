@@ -1,13 +1,47 @@
 @import url(../variaveis.css);
 
 #myDialog{
+    font-family: var(--font-roboto);
     box-shadow: 
     0 2px 4px rgba(255, 255, 255, 0.1), 
     0 4px 8px rgba(255, 255, 255, 0.05);
-    border-radius: 32px;
+    border-radius: 16px;
     border: none;
-}   
+    color: #d9534f;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#myDialog[open] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.avisoModal{
+    text-align: center;
+}
+
+.mensagemModal{
+    color: black;
+}
+
+.btn-modal{
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #myDialog::backdrop{
     background:  rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
 }
